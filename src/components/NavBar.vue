@@ -1,13 +1,13 @@
 <template>
 
-<nav class="navbar navbar-expand navbar-dark bg-secondary">
+<nav class="navbar navbar-expand navbar-dark bg-secondary ">
   <div class="container nav-small">
 
    <div class="collapse navbar-collapse" >
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="#">FAQ</a>
-        <a class="nav-link active" href="#">About</a>
+        <a class="nav-link active" aria-current="page" href="#">About</a>
         <a class="nav-link active" href="#">Contact</a>
+        <a class="nav-link active" href="#">FAQ</a>
       </div>
     </div>
     
@@ -20,20 +20,23 @@
   </div>
 </nav>
 
-<nav class="navbar navbar-expand navbar-dark bg-primary">
+<nav class="navbar navbar-expand navbar-dark bg-primary nav-blue">
 <div class="container">
-<img src = "@/assets/shoplogo.png" alt="shoplogo"/>
-<SearchBox/>
+<img class="img-fluid vw-25" src = "@/assets/shoplogo.png"  alt="shoplogo"/>
+
+<SearchBox class="d-none d-md-inline-flex"/>
 
 <div class="navbar-nav ms-auto">
         <a class="nav-link active cart"  href="#"><i class="fa-solid fa-user"></i></a>
-        <a class="nav-link active cart" href="#"><i class="fa-solid fa-cart-shopping"><span class="cart-number">2</span></i></a>     
+        <a class="nav-link active cart" href="#"><i class="fa-solid fa-cart-shopping"><span class="cart-number">10</span></i></a>     
     </div>
-
 
 </div>  
 </nav>
 
+<div class="m-auto bg-secondary">
+<SearchBox class="d-none d-md-inline-flex"/>
+</div>
 </template>
 
 <script>
@@ -52,17 +55,18 @@ export default {
 <style scoped>
 
 .nav-small{
-  font-family: 'montserrat', sans-serif;
+  font-family: 'poppins', sans-serif;
   height: 10px; 
   font-size: 14px;
   font-weight: 100;
+}
+.nav-blue{
+  font-family: 'poppins', sans-serif;
+  }
   
-}
 
-img{
-  height: 15%;
-  width: 15%;
-}
+
+
 
 .cart{
   font-size: 30px;
@@ -76,12 +80,14 @@ img{
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: red;
+  background-color: #D62828;
   top:  8px;
   right: 2px;
-  font-size: 12px;
+  font-family: 'poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 100;
   text-align: center;
-  padding: 3px 0 0 0;
+  padding: 3.5px 0 0 0;
 
 
   

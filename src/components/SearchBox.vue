@@ -2,7 +2,7 @@
 <div class="input-group">
  <form class="d-flex mx-5 my-auto d-inline w-100">
         <input class="form-control search-box" type="search" placeholder="What are you looking for?" aria-label="Search">
-        <button class="btn btn-secondary px-5">Search</button>
+        <button class="btn btn-secondary px-4"><i class="fa-solid fa-magnifying-glass"></i></button>
      </form>
       </div>
 
@@ -35,17 +35,7 @@ transition: 0.6s ease-in-out;
 .search-box:focus{
 border-radius: 25px 0 0 25px;
 
-
-
 }
-
-
-
-
-
-
-
-
 
 </style>
 

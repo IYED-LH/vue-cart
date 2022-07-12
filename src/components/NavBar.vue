@@ -22,9 +22,9 @@
 
 <nav class="navbar navbar-expand navbar-dark bg-primary nav-blue">
 <div class="container">
-<img class="img-fluid vw-25" src = "@/assets/shoplogo.png"  alt="shoplogo"/>
+<img src = "@/assets/shoplogo.png"  alt="shoplogo"/>
 
-<SearchBox class="d-none d-md-inline-flex"/>
+<SearchBox class="d-none d-lg-inline-flex"/>
 
 <div class="navbar-nav ms-auto">
         <a class="nav-link active cart"  href="#"><i class="fa-solid fa-user"></i></a>
@@ -34,8 +34,8 @@
 </div>  
 </nav>
 
-<div class="m-auto bg-secondary">
-<SearchBox class="d-none d-md-inline-flex"/>
+<div class="m-auto bg-primary">
+<SearchBox class="d-inline-flex d-lg-none py-2"/>
 </div>
 </template>
 
@@ -63,11 +63,12 @@ export default {
 .nav-blue{
   font-family: 'poppins', sans-serif;
   }
+
+img {
+  max-width: 40%;
+  height: auto;
+}
   
-
-
-
-
 .cart{
   font-size: 30px;
   position: relative; 
@@ -87,26 +88,7 @@ export default {
   font-size: 14px;
   font-weight: 100;
   text-align: center;
-  padding: 3.5px 0 0 0;
-
-
-  
-  
-
-
- 
-  
-  
-  
+  padding: 3.5px 0 0 0;  
 }
-
-
-
-
-
-
-
-
-
 
 </style>

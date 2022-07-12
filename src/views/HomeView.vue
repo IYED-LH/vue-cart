@@ -2,6 +2,7 @@
 <header>
 
   <NavBar/>
+  <ProductCard/>
 
 </header>
     
@@ -10,12 +11,14 @@
 
 <script>
 import NavBar from '../components/NavBar.vue'
+import ProductCard from '../components/ProductCard'
 
 
 export default {
   name: 'HomeView',
   components: {
-    NavBar
+    NavBar,
+    ProductCard
   }
   
     

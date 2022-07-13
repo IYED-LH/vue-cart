@@ -2,9 +2,25 @@
 <header>
 
   <NavBar/>
-  <ProductCard/>
-
 </header>
+
+<main>
+<div class="container mt-4">
+<div class="row g-4">
+  <ProductCard />
+  <ProductCard />
+  <ProductCard />
+  <ProductCard />
+  <ProductCard />
+  <ProductCard />
+  <ProductCard />
+  <ProductCard />
+
+</div>
+</div>
+</main>
+
+
     
     
 </template>

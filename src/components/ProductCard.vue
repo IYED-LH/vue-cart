@@ -3,17 +3,18 @@
 <div class="col-xl-4 col-md-6 col-12">
 <div class="card px-2">
 
-  <img class="card-img-top image-size p-4 pb-0" src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"  alt="product">
+  <img class="card-img-top image-size p-4 pb-0" :src="product.image" 
+   alt="product">
   
   <div class="card-body">
     
-    <h5 class="card-title">Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</h5>
+    <h5 class="card-title">{{product.title}}</h5>
     
-    <p class="card-text text">Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday </p>
+    <p class="card-text text">{{product.description}}</p>
 
 <div class="d-flex justify-content-between align-items-center">   
     
-    <h5 class="price-font ps-3" ><span class="dollar-price">$</span>109.95</h5>
+    <h5 class="price-font ps-3">{{product.price}}</h5><span class="dollar-price">$</span>
     
     <button class="btn btn-secondary add-cart-btn py-2"><i class="fa-solid fa-cart-shopping pe-2"></i>Add to Cart</button>
  
@@ -29,10 +30,19 @@
 <script>
 export default {
   name: 'ProductCard',
+  props: ['product'],
+
+  data() {
+    return {
+      
+    }
+  },
 
 }
 
 </script>
+
+
 
 <style scoped>
 .image-size{
@@ -68,7 +78,8 @@ h5{
     position: absolute;
     font-size: 1rem;
     font-weight: 300;
-    right: 100px;
+    left: auto;
+    bottom: 40px;
 }
 
 .add-cart-btn{

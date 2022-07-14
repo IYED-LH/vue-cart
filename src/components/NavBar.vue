@@ -11,7 +11,7 @@
       </div>
     </div>
     
-    <div class="navbar-nav ms-auto">
+    <div class="navbar-nav  ms-auto">
         <a class="nav-link active" aria-current="page" href="#"><i class="fa-brands fa-facebook"></i></a>
         <a class="nav-link active"  href="#"><i class="fa-brands fa-instagram"></i></a>
         <a class="nav-link active" href="#"><i class="fa-brands fa-twitter"></i></a>     
@@ -20,7 +20,7 @@
   </div>
 </nav>
 
-<nav class="navbar navbar-expand navbar-dark bg-primary nav-blue">
+<nav class="navbar navbar-expand sticky-top navbar-dark bg-primary nav-blue">
 <div class="container">
 <img src = "@/assets/shoplogo.png"  alt="shoplogo"/>
 
@@ -37,6 +37,7 @@
 <div class="m-auto bg-primary">
 <SearchBox class="d-inline-flex d-lg-none py-2"/>
 </div>
+
 </template>
 
 <script>
